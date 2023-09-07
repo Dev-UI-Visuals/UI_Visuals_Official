@@ -1,0 +1,58 @@
+[
+    {
+        "name":"Kenab Kushal KC",
+        "img":"/image/team/Kenab_Kushal_KC.png",
+        "department":"Design Head",
+        "linkedInLink":"https://www.linkedin.com/in/kenab-k-c-37098225a",
+        "mailLink":"mailto:https://www.instagram.com/_kenabey_/?hl=en",
+        "instagramLink":"https://www.instagram.com/_kenabey_/?hl=en"
+    },
+    {
+        "name":"Tarang Regmi",
+        "img":"/image/team/Tarang_regmi.png",
+        "department":"Logistic Head",
+        "linkedInLink":"https://www.linkedin.com/in/tarang-regmi-5b5889259/",
+        "mailLink":"mailto:np03cs4a220438@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/_.ta.rang._/?hl=en"
+    },
+    {
+        "name":"Pragati Kuinkel",
+        "img":"/image/team/Pragati_Kuinkel.png",
+        "department":"Photography Head",
+        "linkedInLink":"https://www.linkedin.com/in/pragati-kuinkel-35277b25a/",
+        "mailLink":"mailto:np03cs4a220019@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/pragatikuinkel/?hl=en"
+    },
+    {
+        "name":"Sneha Raut",
+        "department":"Research Head",
+        "img":"/image/team/Sneha_Raut.png",
+        "linkedInLink":"https://www.linkedin.com/in/gaurav-thapaliya-075699210/",
+        "mailLink":"mailto:np03cs4a220126@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/snehaa.iii/?hl=en"
+    },
+    {
+        "name":"Sambriddhi Shrestha",
+        "img":"/image/team/Sambriddhi_Shrestha.png",
+        "department":"Marketing Head",
+        "linkedInLink":"https://www.linkedin.com/in/sambriddhi-shrestha-33068225a/",
+        "mailLink":"mailto:np03cs4a220286@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/shrestha_vibes/?hl=en"
+    },
+    {
+        "name":"Prajwol Neupane",
+        "img":"/image/team/Prajwol_Neupane.png",
+        "department":"Development Head",
+        "linkedInLink":"https://www.linkedin.com/in/prajwol-neupane-b64418208/",
+        "mailLink":"mailto:np03cs4a220031@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/iamprajwolneupane/?hl=en"
+    },
+    {
+        "name":"Aashan Bajgain",
+        "department":"Videography Head",
+        "img":"/image/team/Aashan_Bajgain.png",
+        "linkedInLink":"https://www.linkedin.com/in/aashan-bajgain-94ab55259/",
+        "mailLink":"mailto:np03cs4a220002@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/itsssonmee/"
+    }
+]

@@ -1,0 +1,62 @@
+<div
+  class="pt-[25px] pb-[50px] bg-gradient-to-b from-primary-mid to-primary-main"
+>
+  <h2
+    class="font-sb text-secondary-main lg:text-[90px] md:text-[80px] sm:text-[75px] text-[50px] md:tracking-[-5px] sm:tracking-[-3px] tracking-[-2px] text-center"
+  >
+    Testimonial
+  </h2>
+  <h3 class="font-md text-md text-text-main text-center">
+    Let’s hear from our members.
+  </h3>
+  <div
+    class="swiper testimonial-swiper md:w-[80%] w-[90%] mt-[30px]"
+    id="testimonial"
+  >
+    <div class="swiper-wrapper">
+      <% for (var i = 0; i < data.testimonials.length; i++ ) { %>
+      <div class="swiper-slide flex flex-col items-center justify-center">
+        <div
+          class="md:w-[60%] w-[80%] single-testimonial flex flex-col items-center justify-center"
+        >
+          <img
+            src="./image/team/Saurav_Adhikari.png"
+            class="md:w-[200px] w-[180px] aspect-square object-cover rounded-[100%]"
+          />
+          <div class="flex flex-col items-center">
+            <h3 class="font-md sm:text-sm text-xs text-text-main">
+              Saurav Adhikari
+            </h3>
+            <h4 class="font-r sm:text-xs text-xxs text-text-mid">
+              UI Visuals Leader
+            </h4>
+            <div class="flex flex-row gap-[10px] items-center">
+              <i class="uil uil-linkedin md:text-ic text-md text-text-main"></i>
+              <i class="uil uil-envelope md:text-ic text-md text-text-main"></i>
+              <i
+                class="uil uil-instagram md:text-ic text-md text-text-main"
+              ></i>
+            </div>
+          </div>
+          <p class="font-rg text-xs text-center text-text-main leading-[150%]">
+            "As the leader and Design head of UI Visuals for the year 2022/23, I
+            have been proud to be part of a community that is truly passionate
+            about design and creativity. Through UI Visuals, I have had the
+            opportunity to work with some incredibly talented individuals and
+            collaborate on some truly amazing projects. I am grateful for the
+            chance to contribute to this community and help shape its future,
+            and I look forward to seeing all the incredible things UI Visuals
+            will accomplish in the years to come."
+          </p>
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="uil uil-angle-left-b text-text-light"></i>
+    </div>
+    <div class="swiper-button-next">
+      <i class="uil uil-angle-right-b text-text-light"></i>
+    </div>
+  </div>
+</div>

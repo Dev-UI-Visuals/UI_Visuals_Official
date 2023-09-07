@@ -1,0 +1,61 @@
+<div
+  class="w-[100%] bg-gradient-to-b from-primary-mid to-primary-main px-[50px] pb-[50px] flex flex-col items-center gap-[30px]"
+  id="event"
+>
+  <h1
+    class="lg:text-[90px] md:text-[80px] sm:text-[75px] text-[50px] font-b text-secondary-main text-center md:tracking-[-5px] sm:tracking-[-3px] tracking-[-2px]"
+    id="event-fade"
+  >
+    Events
+  </h1>
+  <div
+    class="lg:w-[90%] w-[100%] mx-[auto] flex flex-row flex-wrap items-stretch justify-center gap-[2%]"
+    id="events"
+  >
+    <% for (var i = 0; i < 3; i++ ) { %>
+    <div
+      class="lg:w-[320px] md:w-[300px] sm:w-[45%] w-[90%] mt-[25px] bg-[#e2e2e2] flex flex-col justify-between items-center"
+    >
+      <img
+        src="<%= data.events[i].profileImage %>"
+        class="w-[100%] h-[200px] object-cover"
+      />
+      <div class="px-[20px] py-[15px] flex flex-col gap-[2px] justify-between">
+        <h3 class="font-md text-text-main text-sm">
+          <%= data.events[i].name %>
+        </h3>
+        <div class="flex flex-row items-center gap-[5px] text-text-main">
+          <i class="uil uil-location-point text-rg"></i>
+          <h5 class="text-xxs"><%= data.events[i].location %></h5>
+        </div>
+        <% if(data.events[i].date.length > 35) { %>
+        <div class="flex flex-row items-start gap-[5px] text-text-main">
+          <i class="uil uil-calendar-alt text-rg"></i>
+          <h5 class="text-xxs"><%= data.events[i].date %></h5>
+        </div>
+        <% } else {%>
+        <div class="flex flex-row items-center gap-[5px] text-text-main">
+          <i class="uil uil-calendar-alt text-rg"></i>
+          <h5 class="text-xxs"><%= data.events[i].date %></h5>
+        </div>
+        <% } %>
+        <h5 class="text-xs text-text-main min-h-[190px]">
+          <%= data.events[i].description[0].paragraph?.substring(0, 220) %>..
+        </h5>
+      </div>
+      <a
+      href="/event/<%= data.events[i].id %>"
+      class="mx-[auto]"
+      target="_blank"
+    >
+      <button
+        class="mb-[20px] bg-text-light hover:bg-text-mid duration-500 px-[30px] py-[10px] text-xxs text-primary-main"
+      >
+        Read More
+      </button>
+    </a>
+    </div>
+    <% } %>
+  </div>
+  <div id="button"></div>
+</div>

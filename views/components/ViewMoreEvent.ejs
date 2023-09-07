@@ -1,0 +1,56 @@
+<div
+  class="px-[10%] py-[30px] pb-[50px] flex flex-col items-center gap-[40px] bg-gradient-to-b from-primary-mid to-primary-main"
+>
+  <h2 class="md:text-xxl sm:text-xl text-md text-text-mid font-sb">
+    View More Events
+  </h2>
+  <div class="w-[100%] swiper more-event-swiper" id="more-event">
+    <div class="swiper-wrapper">
+      <% for(let i = 0 ;i < moreEvent.length;i++){ %>
+      <div class="swiper-slide flex flex-col items-center justify-center">
+        <div
+          class="w-[70%] mx-[50%] bg-[#e2e2e2] flex flex-col justify-start"
+        >
+          <img
+            src="<%= moreEvent[i].profileImage %>"
+            class="w-[100%] h-[150px] object-cover"
+          />
+        <div class="px-[20px] pt-[15px] flex flex-col gap-[2px]">
+            <h3 class="font-md text-text-main text-sm">
+              <%= moreEvent[i].name %>
+            </h3>
+            <div class="flex flex-row items-center gap-[5px] text-text-main">
+              <i class="uil uil-location-point text-rg"></i>
+              <h5 class="text-xxs"><%= moreEvent[i].location %></h5>
+            </div>
+            <div class="flex flex-row items-center gap-[5px] text-text-main">
+              <i class="uil uil-calendar-alt text-rg"></i>
+              <h5 class="text-xxs"><%= moreEvent[i].date %></h5>
+            </div>
+            <h5 class="text-xs text-text-main min-h-[190px]">
+              <%= moreEvent[i].description[0].paragraph?.substring(0, 220) %>..
+            </h5>
+            <a
+              href="/event/<%= moreEvent[i].id %>"
+              class="mx-[auto] mb-[10px]"
+              target="_blank"
+            >
+              <button
+                class="bg-text-light hover:bg-text-mid duration-500 px-[30px] py-[10px] text-xxs text-primary-main"
+              >
+                Read More
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="uil uil-angle-left-b text-xxl text-text-mid hover:text-text-main"></i>
+    </div>
+    <div class="swiper-button-next">
+      <i class="uil uil-angle-right-b text-xxl text-text-mid hover:text-text-main"></i>
+    </div>
+  </div>
+</div>

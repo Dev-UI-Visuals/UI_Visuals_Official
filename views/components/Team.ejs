@@ -1,0 +1,154 @@
+<div
+  class="bg-gradient-to-b from-primary-main to-primary-mid px-[50px] py-[25px] flex flex-col items-center gap-[30px]"
+  id="team"
+>
+  <h1
+    class="font-b text-center lg:text-[90px] md:text-[80px] sm:text-[75px] text-[50px] text-secondary-main leading-[75%] tracking-[-2px] truncate"
+  >
+    Meet Our<br /><span id="team-fade" class="block">Team</span>
+  </h1>
+  <div
+    class="xl:w-[40%] lg:w-[50%] md:w-[70%] sm:w-[80%] w-[70%] mx-[auto] my-[40px] flex sm:flex-row flex-col items-center justify-between gap-[30px]"
+  >
+    <div class="flex flex-col items-center gap-[5px]">
+      <img
+        src="/image/team/Dipesh_Shrestha.png"
+        class="h-[180px] max-[400px]:h-[120px] aspect-square object-cover"
+      />
+      <h3 class="font-r text-text-main sm:text-sm  text-xs leading-[120%]">
+        Mr. Dipesh Shrestha
+      </h3>
+      <h4 class="font-r text-text-light sm:text-xs text-xxs  leading-[120%]">
+        DevCorps Head
+      </h4>
+      <div class="flex flex-row gap-[10px] items-center">
+        <a
+          href="https://www.linkedin.com/in/dipeshshrestha1221/"
+          target="_blank"
+          ><i class="uil uil-linkedin text-rg text-text-main"></i
+        ></a>
+        <a href="mailto:dipesh.shrestha@heraldcollege.edu.np" target="_blank">
+          <i class="uil uil-envelope text-rg text-text-main"></i
+        ></a>
+        <a href="https://www.instagram.com/username__dipesh.sh/" target="_blank"
+          ><i class="uil uil-instagram text-rg text-text-main"></i
+        ></a>
+      </div>
+    </div>
+    <div class="flex flex-col items-center gap-[5px]">
+      <img
+        src="/image/team/Abhisek_Sitaula.png"
+        class="h-[180px] max-[400px]:h-[120px] aspect-square object-cover"
+      />
+      <h3 class="font-r text-text-main  sm:text-sm  text-xs leading-[120%]">
+        Mr. Abhisek Sitaula
+      </h3>
+      <h4 class="font-r text-text-light sm:text-xs text-xxs leading-[120%]">
+        Community Mentor
+      </h4>
+      <div class="flex flex-row gap-[10px] items-center">
+        <a
+          href="https://www.linkedin.com/in/sujata-thapa-625397169/"
+          target="_blank"
+          ><i class="uil uil-linkedin text-rg text-text-main"></i
+        ></a>
+        <a href="mailto:sujata.thapa@heraldcollege.edu.np" target="_blank">
+          <i class="uil uil-envelope text-rg text-text-main"></i
+        ></a>
+        <a href="https://www.instagram.com/sujata3t1/" target="_blank"
+          ><i class="uil uil-instagram text-rg text-text-main"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+  <h2 class="md:text-xxxxl sm:text-xxxl text-lg text-text-mid font-sb tracking-[-2px]">
+    Our Steering Leaders
+  </h2>
+  <div
+    class="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] mx-auto flex flex-row flex-wrap gap-[50px] justify-center"
+  >
+    <% for (var i = 0; i < data.leaders.length; i++ ) { %>
+    <div class="w-[180px] max-[600px]:w-[150px] max-[400px]:w-[110px] flex flex-col gap-[5px] items-center">
+      <img
+        src="<%= data.leaders[i].img %>"
+        class="w-[100%] aspect-square object-cover"
+      />
+      <h3 class="font-r text-text-main sm:text-xs text-xxs text-center leading-[120%]">
+        <%= data.leaders[i].name %>
+      </h3>
+      <h4 class="font-r text-text-light sm:text-xxs text-xxxs text-center leading-[120%]">
+        Steering Leader
+      </h4>
+      <div class="flex flex-row gap-[10px] items-center">
+        <a href="<%= data.leaders[i].linkedInLink %>" target="_blank"
+          ><i class="uil uil-linkedin text-sm text-text-main"></i
+        ></a>
+        <a href="<%= data.leaders[i].mailLink %>" target="_blank">
+          <i class="uil uil-envelope text-sm text-text-main"></i
+        ></a>
+        <a href="<%= data.leaders[i].instagramLink %>" target="_blank"
+          ><i class="uil uil-instagram text-sm text-text-main"></i
+        ></a>
+      </div>
+    </div>
+    <% } %>
+  </div>
+  <!-- <h2 class="md:text-xxxxl sm:text-xxxl text-lg text-text-mid font-sb tracking-[-2px]">
+    Department Heads
+  </h2>
+  <div
+    class="lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%] mx-auto flex flex-row flex-wrap gap-[50px] justify-center"
+  >
+    <% for (var i = 0; i < data.heads.length; i++ ) { %>
+    <div class="w-[180px] max-[600px]:w-[150px] max-[400px]:w-[110px] flex flex-col gap-[5px] items-center">
+      <img
+        src="<%= data.heads[i].img %>"
+        class="w-[100%] aspect-square object-cover"
+      />
+      <h3 class="font-r text-text-main sm:text-xs text-xxs text-center leading-[120%]">
+        <%= data.heads[i].name %>
+      </h3>
+      <h4 class="font-r text-text-light sm:text-xxs text-xxxs text-center leading-[120%]">
+        <%= data.heads[i].department %>
+      </h4>
+      <div class="flex flex-row gap-[10px] items-center">
+        <a href="<%= data.heads[i].linkedInLink %>" target="_blank"
+          ><i class="uil uil-linkedin text-sm text-text-main"></i
+        ></a>
+        <a href="<%= data.heads[i].mailLink %>" target="_blank">
+          <i class="uil uil-envelope text-sm text-text-main"></i
+        ></a>
+        <a href="<%= data.heads[i].instagramLink %>" target="_blank"
+          ><i class="uil uil-instagram text-sm text-text-main"></i
+        ></a>
+      </div>
+    </div>
+    <% } %>
+  </div> -->
+  <h2 class="md:text-xxxxl sm:text-xxxl text-lg text-text-mid font-sb tracking-[-2px]">Members</h2>
+  <div class="lg:w-[70%] md:w-[80%] w-[90%] swiper member-swiper" id="member">
+    <div class="swiper-wrapper md:ml-[-1%] ml-[1%]">
+      <% for (var i = 0; i < data.members.length; i++ ) { %>
+      <div class="swiper-slide">
+        <div
+          class="bg-primary-mid md:w-[200px] md:h-[200px] w-[150px] h-[150px] max-[400px]:w-[118px]  max-[400px]:w-[118px] max-[400px]:h-[118px] flex flex-col items-center justify-between"
+        >
+          <img
+            src="<%= data.members[i].img %>"
+            class="w-[85%] aspect-square object-cover"
+          />
+          <h5 class="font-r md:text-xs sm:text-xxs text-xxxs text-text-main">
+            <%= data.members[i].name %>
+          </h5>
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="uil uil-angle-left-b text-text-light bg-primary-main"></i>
+    </div>
+    <div class="swiper-button-next mr-[5px]">
+      <i class="uil uil-angle-right-b text-text-light bg-primary-main"></i>
+    </div>
+  </div>
+</div>

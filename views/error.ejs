@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./components/Header') %>
+    <title>UI Visuals</title>
+  </head>
+  <body>
+    <div
+      class="w-[100%] py-[20px] px-[10%] z-[4] duration-500 fixed top-0 flex flex-col md:flex-row justify-between gap-[20px] items-center bg-transparent flex flex-row"
+      id="nav"
+    >
+      <!-- Div nav-img contain headding nav images  -->
+      <div class="flex flex-row gap-[20px] items-center">
+        <img src="/image/DEV_BLACK.png" class="w-[80px] object-contain" />
+        <div class="nav-line"></div>
+        <img src="/image/UI_BLACK.png" class="w-[55px] object-contain" />
+      </div>
+      <!-- Div nav-items contain links for scroll navigation -->
+      <div class="flex flex-row md:gap-[50px] gap-[20px] items-center">
+        <a href="/">
+          <h4 class="text-text-main font-r text-xs cursor-pointer">Home</h4></a
+        >
+        <a href="/">
+          <h4 class="text-text-main font-r text-xs cursor-pointer">About</h4></a
+        >
+        <a href="/">
+          <h4 class="text-text-main font-r text-xs cursor-pointer">
+            Events
+          </h4></a
+        >
+        <a href="/">
+          <h4 class="text-text-main font-r text-xs cursor-pointer">Team</h4></a
+        >
+        <a href="/">
+          <h4 class="text-text-main font-r text-xs cursor-pointer">
+            Contact
+          </h4></a
+        >
+      </div>
+    </div>
+    <div class="flex flex-col items-center pt-[150px] gap-2 w-full h-[100vh] bg-primary-mid">
+      <img
+        src="/image/Error_Man.png"
+        class="md:w-[350px] sm:w-[300px] w-[250px]"
+      />
+      <h3 class="font-md sm:text-md text-xs text-text-main">OOPS! PAGE NOT FOUND</h3>
+      <h5 class="font-l sm:text-xs text-xxs">Sorry the page you are looking for cannot be found</h5>
+      <a href="/"
+        ><button
+          class="bg-text-light hover:bg-text-mid duration-500 px-[30px] py-[10px] text-xxs text-primary-main mt-2"
+        >
+          Back to Home Page
+        </button></a
+      >
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/script.js"></script>
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+        "name":"Sugam Paudyal",
+        "img":"/image/team/Sugam_Paudyal.png",
+        "linkedInLink":"https://www.linkedin.com/in/sugampaudyal/",
+        "mailLink":"mailto:np03cs4s220241@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/shugam_paudyal/?hl=en"
+    },
+    {
+        "name":"Prajeet Shrestha",
+        "img":"/image/team/Prajeet_Shrestha.png",
+        "linkedInLink":"https://www.linkedin.com/in/prajeet-shrestha-b13b95215/",
+        "mailLink":"mailto:np03cs4m210019@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/prajeet_d_shrestha/?hl=en"
+    },
+    {
+        "name":"Pramisha Shrestha",
+        "img":"/image/team/Pramisha_Shrestha.png",
+        "linkedInLink":"https://www.linkedin.com/in/pramisha-shrestha-287355241/",
+        "mailLink":"mailto:np03cs4a210027@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/_pramisha_shrestha_/?hl=en"
+    },
+    {
+        "name":"Junu Shrestha",
+        "img":"/image/team/Junu_Shrestha.png",
+        "linkedInLink":"https://www.linkedin.com/in/junu-shrestha-909a06224/",
+        "mailLink":"mailto:np03cs4a210023@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/junustha7/?hl=en"
+    },
+    {
+        "name":"Grishna Vaidya",
+        "img":"/image/team/Grishna_Vaidya.png",
+        "linkedInLink":"https://www.linkedin.com/in/grishna-vaidya-289144238/",
+        "mailLink":"mailto:np03cs4s220237@heraldcollege.edu.np",
+        "instagramLink":"https://www.instagram.com/grishnavaidya/?hl=en"
+    }
+]

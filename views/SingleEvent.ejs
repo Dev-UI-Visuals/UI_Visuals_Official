@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./components/Header') %>
+    <meta property="og:image" content="<%= data.profileImage%>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="UI Visuals" />
+    <meta
+      name="description"
+      content="<%= data.description[0].paragraph %>"
+    />
+    <title>UI Visuals | <%= data.name %></title>
+  </head>
+  <body>
+    <div
+      class="flex flex-col justify-end bg w[100%] h-[70vh] pb-[30px] bg-gradient-to-b from-primary-main via-transparent to-primary-mid"
+      id="bg"
+    >
+      <div
+        class="w-[100%] py-[20px] px-[10%] z-[4] duration-500 fixed top-0 flex flex-col md:flex-row justify-between gap-[20px] items-center bg-transparent flex flex-row"
+        id="nav"
+      >
+        <!-- Div nav-img contain heading nav images  -->
+        <div class="flex flex-row gap-[20px] items-center">
+          <img src="/image/DEV_BLACK.png" class="w-[80px] object-contain" />
+          <div class="w-[1px] h-[35px] bg-text-main"></div>
+          <img src="/image/UI_BLACK.png" class="w-[55px] object-contain" />
+        </div>
+        <!-- Div nav-items contain links for link -->
+        <div class="flex flex-row md:gap-[50px] gap-[20px] items-center">
+          <a href="/"
+            ><h4 class="text-text-main font-r text-xs cursor-pointer">
+              Home
+            </h4></a
+          >
+          <a href="/"
+            ><h4 class="text-text-main font-r text-xs cursor-pointer">
+              About
+            </h4></a
+          >
+          <a href="/"
+            ><h4 class="text-text-main font-r text-xs cursor-pointer">
+              Events
+            </h4></a
+          >
+          <a href="/"
+            ><h4 class="text-text-main font-r text-xs cursor-pointer">
+              Team
+            </h4></a
+          >
+          <a href="/"
+            ><h4 class="text-text-main font-r text-xs cursor-pointer">
+              Contact
+            </h4></a
+          >
+        </div>
+      </div>
+      <div class="px-[10%] z-[2] flex flex-col items-center">
+        <h2 class="font-sb sm:text-xxxl text-xxl text-text-main leading-[120%] text-center">
+          <%= data.name %>
+        </h2>
+        <span>
+          <div class="text-text-main flex flex-row items-center gap-[5px]">
+            <i class="uil uil-map-marker sm:text-rg text-sm"></i>
+            <p class="font-r sm:text-xs text-xxs"><%= data.location %></p>
+          </div>
+        </span>
+        <span>
+          <div class="text-text-main flex flex-row items-center gap-[5px]">
+            <i class="uil uil-schedule sm:text-rg text-sm"></i>
+            <p class="font-r sm:text-xs text-xxs"><%= data.date %></p>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="swiper header-swiper w-[100%] h-[70vh] absolute top-[0px]">
+      <div class="swiper-wrapper">
+        <% for(var i = 0;i < data.headerImage.length;i++) {%>
+        <div class="swiper-slide">
+          <div
+            class="header-image"
+            style="
+              background: linear-gradient(
+                  rgb(237, 237, 237, 1),
+                  rgb(237, 237, 237, 0.6),
+                  rgb(237, 237, 237, 1)
+                ),
+                url('<%= data.headerImage[i] %>');
+            "
+          ></div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+    <div
+      class="px-[10%] py-[30px] flex flex-col items-center gap-[20px] bg-gradient-to-b from-primary-main to-primary-mid"
+    >
+      <% for (var i = 0; i < data.description.length; i++) { %> <%
+      if(data.description[i].paragraph){ %>
+      <p class="font-rg sm:text-xs text-xxs text-text-main leading-[180%]">
+        <%= data.description[i].paragraph %>
+      </p>
+      <% } else if(data.description[i].image){%>
+      <img src="<%= data.description[i].image %>" class="sm:w-[80%] w-[100%]"/>
+      <% } else if(data.description[i].title){%>
+           <div class="w-[100%] flex flex-row items-center justify-center gap-[40px]">
+            <img src="<%= data.description[i].poster %>" class="sm:w-[20%] w-[40%] aspect-square object-cover"/>
+            <div>
+              <h2 class="font-md sm:text-md text-xs text-text-main"><%= data.description[i].title %></h2>
+              <div class="text-text-main flex flex-row sm:items-center items-start gap-[5px]">
+                <i class="uil uil-map-marker sm:text-rg text-sm"></i>
+                <p class="font-r sm:text-xs text-xxs"><%= data.description[i].location %></p>
+              </div>
+              <div class="text-text-main flex flex-row sm:items-center items-start gap-[5px]">
+                <i class="uil uil-schedule sm:text-rg text-sm"></i>
+                <p class="font-r sm:text-xs text-xxs"><%= data.description[i].date %></p>
+              </div>
+            </div>
+           </div>
+        <% } %>
+      <% } %>
+          <% if (data.youtubeCode) { %>
+        <iframe
+          src="https://www.youtube.com/embed/<%= data.youtubeCode %>"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen class="w-[90%] h-[500px]"
+        ></iframe>
+        <% } %>
+      </div>
+    </div>
+    <%- include('./components/ViewMoreEvent')%>
+    <%- include('./components/Contact')%>
+  </body>
+</html>
